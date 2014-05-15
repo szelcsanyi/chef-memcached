@@ -33,12 +33,12 @@ Currently only one version is supported.
 * `repcache_listen`: repcache listen address (default not set)
 * `verbose`: verbose logging (default not set, [-v or -vv])
 
-#### A redis instance with default settings:
+#### A memcached instance with default settings:
 ```ruby
 memcached_pool "basic_example"
 ```
 
-#### A redis instance with custom parameters:
+#### A memcached instance with custom parameters:
 ```ruby
 memcached_pool "extended_example" do
     port "11212"
