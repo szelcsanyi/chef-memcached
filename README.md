@@ -1,5 +1,6 @@
 # memcached cookbook
 [![Build Status](https://travis-ci.org/szelcsanyi/chef-memcached.svg?branch=master)](https://travis-ci.org/szelcsanyi/chef-memcached)
+[![security](https://hakiri.io/github/szelcsanyi/chef-memcached/master.svg)](https://hakiri.io/github/szelcsanyi/chef-memcached/master)
 
 ## Description
 
