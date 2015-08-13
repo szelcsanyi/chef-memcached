@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: memcached
+# Cookbook Name:: L7-memcached
 # Provider:: pool
 #
-# Copyright 2014, Gabor Szelcsanyi <szelcsanyi.gabor@gmail.com>
+# Copyright 2015, Gabor Szelcsanyi <szelcsanyi.gabor@gmail.com>
 
 def whyrun_supported?
   true
@@ -31,7 +31,7 @@ action :create do
 
   t = template "/etc/init.d/memcached-#{new_resource.name}" do
     source 'etc/init.d/memcached_pool.erb'
-    cookbook 'memcached'
+    cookbook 'L7-memcached'
     owner 'root'
     group 'root'
     mode '0755'
@@ -41,7 +41,7 @@ action :create do
 
   t = template "/etc/memcached_#{new_resource.name}.conf" do
     source 'etc/memcached_pool.conf.erb'
-    cookbook 'memcached'
+    cookbook 'L7-memcached'
     owner 'root'
     group 'root'
     mode '0644'

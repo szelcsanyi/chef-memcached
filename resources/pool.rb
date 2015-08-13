@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: memcached
+# Cookbook Name:: L7-memcached
 # Provider:: pool
 #
-# Copyright 2014, Gabor Szelcsanyi <szelcsanyi.gabor@gmail.com>
+# Copyright 2015, Gabor Szelcsanyi <szelcsanyi.gabor@gmail.com>
 
 actions :create, :remove
 

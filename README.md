@@ -1,6 +1,7 @@
-# memcached cookbook
+# L7-memcached cookbook
 [![Build Status](https://travis-ci.org/szelcsanyi/chef-memcached.svg?branch=master)](https://travis-ci.org/szelcsanyi/chef-memcached)
 [![security](https://hakiri.io/github/szelcsanyi/chef-memcached/master.svg)](https://hakiri.io/github/szelcsanyi/chef-memcached/master)
+[![Cookbook Version](https://img.shields.io/cookbook/v/L7-memcached.svg?style=flat)](https://supermarket.chef.io/cookbooks/L7-memcached)
 
 ## Description
 
@@ -8,19 +9,19 @@ Configures [Memcached](http://memcached.org) via Opscode Chef
 
 It can handle multiple instances with different configuratioins on the same machine.
 
-Currently only one version is supported.
+Currently only one memcached version is supported.
 
 ## Supported Platforms
 
-* Ubuntu
-* Debian
+* Ubuntu 12.04+
+* Debian 7.0+
 
 ## Recipes
 
-* `memcached` - The default no-op recipe.
+* `L7-memcached` - The default no-op recipe.
 
 ## Providers
-* `memcached_pool` - Configures memcached instance
+* `L7_memcached_pool` - Configures memcached instance
 
 ## Usage
 ###Provider parameters:
@@ -36,12 +37,12 @@ Currently only one version is supported.
 
 #### A memcached instance with default settings:
 ```ruby
-memcached_pool "basic_example"
+L7_memcached_pool "basic_example"
 ```
 
 #### A memcached instance with custom parameters:
 ```ruby
-memcached_pool "extended_example" do
+L7_memcached_pool "extended_example" do
     port "11212"
     bind "0.0.0.0"
     size 64
@@ -61,8 +62,8 @@ Implement multiversion support.
 
 ## License
 
-* Freely distributable and licensed under the [MIT license](http://szelcsanyi.mit-license.org/2014/license.html).
-* Copyright (c) 2014 Gabor Szelcsanyi
+* Freely distributable and licensed under the [MIT license](http://szelcsanyi.mit-license.org/2015/license.html).
+* Copyright (c) 2015 Gabor Szelcsanyi
 
 [![image](https://ga-beacon.appspot.com/UA-56493884-1/chef-memcached/README.md)](https://github.com/szelcsanyi/chef-memcached)
 
