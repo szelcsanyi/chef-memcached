@@ -37,12 +37,12 @@ Currently only one memcached version is supported.
 
 #### A memcached instance with default settings:
 ```ruby
-L7_memcached_pool "basic_example"
+L7_memcached_pool 'basic_example'
 ```
 
 #### A memcached instance with custom parameters:
 ```ruby
-L7_memcached_pool "extended_example" do
+L7_memcached_pool 'extended_example' do
     port '11212'
     bind '0.0.0.0'
     size 64
