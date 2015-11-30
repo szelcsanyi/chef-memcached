@@ -4,7 +4,7 @@ license          'MIT'
 description      'Installs/Configures memcached, multi instance support'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 name             'L7-memcached'
-version          '1.0.2'
+version          '1.0.3'
 source_url       'https://github.com/szelcsanyi/chef-memcached'
 issues_url       'https://github.com/szelcsanyi/chef-memcached/issues'
 

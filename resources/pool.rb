@@ -7,7 +7,7 @@
 actions :create, :remove
 
 attribute :name, kind_of: String, name_attribute: true
-attribute :cookbook, kind_of: String, default: 'memcached'
+attribute :cookbook, kind_of: String, default: 'L7-memcached'
 attribute :tcp_port, kind_of: [Integer, String], default: '11211'
 attribute :udp_port, kind_of: [Integer, String], default: '0'
 attribute :listen, kind_of: [Integer, String], default: '127.0.0.1'
